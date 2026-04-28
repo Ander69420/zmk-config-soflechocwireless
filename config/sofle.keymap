@@ -10,6 +10,15 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        smerdo_reset {
+            bindings = <&sys_reset>;
+            key-positions = <36 24 12 0 42>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
